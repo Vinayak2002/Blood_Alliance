@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_blue_light"
+        tools:context=".Activity.RegistrationActivity">
+
+        <TextView
+            android:id="@+id/headRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/heading"
+            android:text="@string/registration"
+            android:textColor="@color/bloodRed"
+            android:textSize="40sp" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headRegister"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginTop="20dp"
+            android:autofillHints="Name"
+            android:hint="@string/enter_name"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/etMobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etName"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginTop="20dp"
+            android:autofillHints="Mobile"
+            android:hint="@string/enter_mobile_number"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/etUsernameR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etMobile"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginTop="20dp"
+            android:autofillHints="Username"
+            android:hint="@string/enter_username"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/etBloodGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etUsernameR"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginTop="20dp"
+            android:autofillHints="Username"
+            android:hint="@string/enter_blood_group"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/lastDOD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etBloodGroup"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginTop="20dp"
+            android:autofillHints="Username"
+            android:hint="@string/last_donation_date_yyyy_mm_dd"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/numberOfDonations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lastDOD"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginTop="20dp"
+            android:autofillHints="Username"
+            android:hint="@string/number_of_previous_donations"
+            android:inputType="number"
+            android:padding="10dp"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/etCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/numberOfDonations"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginTop="20dp"
+            android:autofillHints="Password"
+            android:hint="@string/enter_your_city"
+            android:imeActionLabel="@string/action_sign_in_short"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:padding="10dp"
+            android:selectAllOnFocus="true"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/etState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etCity"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginTop="20dp"
+            android:autofillHints="Password"
+            android:hint="@string/enter_your_state"
+            android:imeActionLabel="@string/action_sign_in_short"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:padding="10dp"
+            android:selectAllOnFocus="true"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/etPasswordR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etState"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginTop="20dp"
+            android:autofillHints="Password"
+            android:hint="@string/prompt_password"
+            android:imeActionLabel="@string/action_sign_in_short"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:selectAllOnFocus="true"
+            android:textColorHint="@color/black" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etPasswordR"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@color/bloodRed"
+            android:padding="10dp"
+            android:text="@string/register_me"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtAlready"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnRegister"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="@string/already"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

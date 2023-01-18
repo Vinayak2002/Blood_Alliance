@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DashboardActivity"
+    android:background="@android:color/holo_blue_light">
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnShowProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtWelcome"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/show_profile"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:background="@color/bloodRed"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnShowStock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnShowProfile"
+        android:layout_marginVertical="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/show_blood_packet_stock"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:background="@color/bloodRed"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnPutDonationReq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnShowStock"
+        android:layout_marginVertical="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/put_donation_requests"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:background="@color/bloodRed"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnPutBloodReq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnPutDonationReq"
+        android:layout_marginVertical="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/put_blood_requests"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:background="@color/bloodRed"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>

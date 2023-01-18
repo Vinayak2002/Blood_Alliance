@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileViewActivity"
+    android:background="@android:color/holo_blue_light">
+
+
+    <TextView
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:fontFamily="@font/heading"
+        android:textColor="@color/bloodRed"
+        android:text="@string/user_details"
+        android:layout_marginVertical="20dp" />
+
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:text="@string/name"
+        android:textSize="20sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="20dp" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/txtName"
+        android:layout_below="@+id/top"
+        android:text="@string/name"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:autofillHints="Name"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/txtBldGrp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtName"
+        android:text="@string/blood_group"
+        android:textSize="20sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="20dp" />
+
+    <EditText
+        android:id="@+id/etBldGrp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtName"
+        android:layout_toEndOf="@+id/txtBldGrp"
+        android:text="@string/blood_group"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:autofillHints="Blood Group"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/txtLD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtBldGrp"
+        android:text="@string/last_donation"
+        android:textSize="20sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="20dp" />
+
+    <EditText
+        android:id="@+id/etLD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtBldGrp"
+        android:text="@string/last_donation"
+        android:layout_toEndOf="@+id/txtLD"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:importantForAutofill="no"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/txtND"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLD"
+        android:text="@string/next_donation"
+        android:textSize="20sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:id="@+id/txtNDInf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLD"
+        android:layout_toEndOf="@+id/txtND"
+        android:text="@string/next_donation"
+        android:textSize="20sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:id="@+id/txtDonations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtND"
+        android:text="@string/donations"
+        android:textSize="20sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="20dp" />
+
+    <EditText
+        android:id="@+id/etDonations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtND"
+        android:layout_toEndOf="@+id/txtDonations"
+        android:text="@string/donations"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:importantForAutofill="no"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/txtCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDonations"
+        android:text="@string/city"
+        android:textSize="20sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="20dp" />
+
+    <EditText
+        android:id="@+id/etCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDonations"
+        android:layout_toEndOf="@+id/txtCity"
+        android:text="@string/city"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:autofillHints="City"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/txtState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCity"
+        android:text="@string/state"
+        android:textSize="20sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="20dp" />
+
+    <EditText
+        android:id="@+id/etState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCity"
+        android:layout_toEndOf="@+id/txtState"
+        android:text="@string/state"
+        android:textSize="20sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:autofillHints="State"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/update_info"
+        android:textColor="@color/white"
+        android:background="@color/bloodRed"
+        android:layout_below="@+id/txtState"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp" />
+
+</RelativeLayout>

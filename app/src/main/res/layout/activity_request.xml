@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.RequestActivity"
+    android:background="@android:color/holo_blue_light">
+
+    <TextView
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/request_for"
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:textColor="@color/bloodRed"
+        />
+
+    <EditText
+        android:id="@+id/etBloodGroup"
+        android:layout_marginTop="50dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:hint="@string/blood_group1"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/etCity"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etBloodGroup"
+        android:textColor="@color/black"
+        android:hint="@string/city1"
+        android:textColorHint="@color/black"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/etState"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etCity"
+        android:textColor="@color/black"
+        android:hint="@string/state1"
+        android:textColorHint="@color/black"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/btnSubmitReq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etState"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:text="Submit Request"
+        android:background="@color/bloodRed"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        />
+
+</RelativeLayout>
